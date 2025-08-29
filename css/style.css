@@ -1,0 +1,131 @@
+body {
+	background-color: grey;
+	background:
+		linear-gradient(#222, #040404, #040404);
+	background-attachment: fixed;
+	color: #ccc;
+	font-family: sans-serif;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header header'
+		'menu main main main main main main'
+		'menu main main main main main main'
+		'. . footer footer footer footer footer';
+	grid-gap: 5px;
+}
+.grid-container div {
+	border-radius: 2px;
+	padding: 0px 5px;
+}
+
+.header {
+	grid-area: header;
+	height: 60px;
+	margin: -8px;
+	margin-bottom: 0px;
+	background:
+		repeating-linear-gradient(-56deg,transparent,transparent 2px,#111 2px,#111 4px),
+		linear-gradient(to bottom,#555,#222);
+	border-bottom: 1px solid #3b3b3b;
+}
+.header h2 {
+	text-shadow: 2px 2px black;
+	padding-left: 20px;
+    height: 35px;
+}
+
+.navpanel {
+	grid-area: menu;
+	width: 127px;
+	margin: 10px 0 0 10px;
+}
+.navpanel h3 {
+    font-size: 12px;
+    border-bottom: 1px solid #3b3b3b;
+    padding-bottom:4px;
+    margin-bottom: -12px;
+}
+.navpanel ul {
+    list-style-type: none;
+	padding: 0.3em 0 0 0;
+
+}
+.navpanel li {
+	padding: 1px 0px;
+}
+.navpanel a {
+    text-decoration: none;
+    color:steelblue;
+    font-size: 12px;
+}
+.navpanel a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	grid-area: main;
+	background-color: #222;
+	border: 1px solid #3b3b3b;
+}
+.content h1 {
+	padding-left: 5px
+}
+
+.intro {
+	font-size: 14px;
+}
+.intro a {
+	color: tomato; text-decoration: none;
+}
+.intro a:hover {
+	text-decoration: underline;
+}
+
+.categories h2 {
+    background: #222;
+    color:whitesmoke;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+    border-bottom: 1px solid #3b3b3b;
+}
+.categories h4 {
+	margin-top: -10px;
+	font-size: 14px;
+}
+.categories p {
+    background: #222;
+	font-size: 14px;
+    margin-top: -12px
+}
+
+.footer {
+	grid-area: footer;
+	width: 500px;
+	font-size: 11px;
+}
+.footer ul {
+	list-style-type: none;
+}
+.footer a {
+	float: left;
+	margin-right: 10px;
+	text-decoration: none;
+    color:steelblue;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+strong {
+    font-weight:100px;
+    color: #86bf40
+}
+mark {
+	background-color: #10a160;
+	border-radius: 3px;
+}
+
